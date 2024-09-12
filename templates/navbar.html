@@ -1,0 +1,62 @@
+<nav class="navbar navbar-b navbar-dark navbar-trans navbar-expand-xl fixed-top nav-padding" id="sidebar-menu"><a class="navbar-brand p-0" href="#">
+    <img class="img-fluid" style="height: 80px !important;" src="/static/assets/images/logo/Akshada Logo3.png" alt=""></a>
+    <button class="navbar-toggler navabr_btn-set custom_nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <div class="navbar-collapse justify-content-center collapse hidenav" id="navbarDefault">
+      <ul class="navbar-nav navbar_nav_modify" id="scroll-spy">
+        <li class="nav-item"><a class="nav-link" href="#layout">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="skinCareDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Skin Care
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="skinCareDropdown">
+            <li><a class="dropdown-item" href="#cleansers">Cleansers</a></li>
+            <li><a class="dropdown-item" href="#moisturizers">Moisturizers</a></li>
+            <li><a class="dropdown-item" href="#serums">Serums</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="hairCareDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Hair Care
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="hairCareDropdown">
+            <li><a class="dropdown-item" href="#shampoos">Shampoos</a></li>
+            <li><a class="dropdown-item" href="#conditioners">Conditioners</a></li>
+            <li><a class="dropdown-item" href="#treatments">Treatments</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#applications">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#landings">privacy policy</a></li>
+        <li class="nav-item"><a class="nav-link" href="#documentation">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="">
+      <a class="nav-link js-scroll" href="" style="font-size: 1.4rem; color: #C45F1E;">
+        <i class="fa-brands fa-instagram" style="vertical-align: middle;"></i>
+      </a>
+    </div>
+    <div class="mx-3">
+      <a class="nav-link js-scroll" href="" style="font-size: 1.4rem; color: #C45F1E;">
+        <i class="fa-brands fa-facebook" style="vertical-align: middle;"></i>
+      </a>
+    </div>
+    {% if user.is_authenticated %}
+    <div class="dropdown">
+      <a class="nav-link js-scroll" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 1.4rem; color: #C45F1E;">
+        <i class="fa-solid fa-user" style="vertical-align: middle;"></i>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+        <li><a class="dropdown-item">{{ request.user.username }}</a></li>
+        <li><a class="dropdown-item" href="#">My Profile</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Log Out</a></li>
+      </ul>
+    </div>
+    {% else %}
+    <div class="">
+      <a class="nav-link js-scroll" href="{% url "accounts:login" %}" style="font-size: 1.2rem; color: #C45F1E;">
+        <i class="fa-solid fa-right-to-bracket" style="vertical-align: middle; margin-right: 5px;"></i>
+        <span style="font-size: 1.1rem;">Log In</span>
+      </a>
+    </div>
+    {% endif %}
+  </nav>

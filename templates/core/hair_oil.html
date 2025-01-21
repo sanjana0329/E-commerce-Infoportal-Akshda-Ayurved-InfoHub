@@ -1,0 +1,289 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Hair Oil
+{% endblock title %}
+
+
+
+{% block top-content %}
+  <div class="row justify-content-center">
+      <div class="col-lg-8 col-sm-10">
+          <div class="content text-center">
+              <div>
+                  <h6 class="content-title"><img class="arrow-decore"
+                      src="https://admin.pixelstrap.com/cuba/assets/images/landing/decore/arrow.svg" alt="">
+                      <span class="sub-title mb-5 custom-sub-title-font">Discover Natural and Modern Hair Care</span>
+                  </h6>
+                  {% comment %} <h1 class="wow fadeIn">Kumkumadi Oil</h1> {% endcomment %}
+              </div>
+          </div>
+      </div>
+      <div class="col-xl-7 col-lg-8 col-md-10 text-center">
+          {% comment %} <img class="screen1 img-fluid" style="max-width: 60% !important;"
+              src="/static/assets/images/landing/screen5.webp" alt=""> {% endcomment %}
+      </div>
+  </div>
+{% endblock top-content %}
+
+{% block content %}
+<div class="page-wrapper compact-wrapper" id="pageWrapper">
+
+
+    <div class="container-fluid">
+        <div>
+            <div class="row product-page-main p-0">
+                <div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="product-slider owl-carousel owl-theme" id="sync1">
+                                        <div class="item d-flex justify-content-center">
+                                            <figure class="h-50 w-50"
+                                                style="background-image: url(../assets/images/ecommerce/01.jpg)">
+                                                <img class="img-fluid" style="max-height: 300px !important;" src="{% static 'assets/images/ecommerce/01.jpg' %}"
+                                                    alt="user">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 w-full">
+                                    <div class="landing-title">
+                                        {% comment %} <h3>Women's Top</h3> {% endcomment %}
+                                        <h2><span class="custom-title-font">Nourishing Ayurvedic Hair Oil</span></h2>
+                                    </div>
+                                    <p>Experience the rejuvenating power of Ayurveda with our carefully crafted Nourishing Hair Oil. This luxurious blend combines traditional oils and potent herbs to provide deep nourishment, strengthen hair, and promote overall scalp health.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+    
+            <div class="card">
+                <div class="card-header card-no-border">
+                    <div class="header-top">
+                        <h5 class="custom-title-font">Key Ingredients and Benefits</h5>
+                        {% comment %} <div class="card-header-right-btn"><a class="c-o-light" href="#!">View
+                                All </a></div> {% endcomment %}
+                    </div>
+                </div>
+                <div class="card-body pt-0">
+                    <div class="slider-wrapper arrow-round">
+                        <div class="swiper shop-category-slider mx-3">
+                            <div class="swiper-wrapper d-flex justify-content-between">
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-50 w-50" src="{% static 'assets/Ingredients/scandalwood.png' %}" alt="phone">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Sesame Oil</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-50 w-50" src="{% static 'assets/Ingredients/Saffron.png' %}" alt="Camera">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Coconut Oil</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-75 w-75" src="{% static 'assets/Ingredients/Turmeric.png' %}" alt="phone">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Castor Oil</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-75 w-75" src="{% static 'assets/Ingredients/Jasmine.png' %}" alt="Camera">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Brahmi</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-100 w-100" src="{% static 'assets/Ingredients/BlackMustardSeed.png' %}" alt="phone">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Gunja</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-75 w-75" src="{% static 'assets/Ingredients/Lotus.png' %}" alt="Camera">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Bhringraj</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-75 w-75" src="{% static 'assets/Ingredients/SesameSeedOil.png' %}" alt="phone">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Dhatura Leaves</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-75 w-75" src="{% static 'assets/Ingredients/SugandhiValo.png' %}" alt="Camera">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Ashwagandha</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-50 w-50" src="{% static 'assets/Ingredients/scandalwood.png' %}" alt="phone">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Vetiver</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-50 w-50" src="{% static 'assets/Ingredients/Saffron.png' %}" alt="Camera">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Jatamansi</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-50 w-50" src="{% static 'assets/Ingredients/Saffron.png' %}" alt="Camera">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Yashtimadhu</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-50 w-50" src="{% static 'assets/Ingredients/Saffron.png' %}" alt="Camera">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Manjistha</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row my-5 mx-4">
+                <div class="col-md-6">
+                    <div class=" text-center">
+                        <h5 class="sub-title mb-4 custom-sub-title-font">Frequency of Nourishing Ayurvedic Hair Oil</h5>
+                        <p class="f-24 mb-4 custom-title-font">
+                            For best results, apply Nourishing Ayurvedic Hair Oil 2-3 times a week. Adjust usage to suit your hair type and specific concerns for optimal care.
+                        </p>
+                        <p> • For optimal results, use 2-3 times a week. </p>
+                        <p> • Adjust frequency as needed based on your hair type and concerns. </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-slider owl-carousel owl-theme" id="sync1">
+                        <div class="item">
+                            <figure class="">
+                                <img class="img-fluid" src="{% static 'assets/images/landing/kumkum-oil.png' %}" alt="user">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <p class="f-24 custom-title-font text-center">
+                    This oil can be applied directly to the scalp or mixed with your favorite hair mask. Regular use, especially overnight, nourishes deeply, promoting strong, shiny, and healthy hair.
+                </p>
+            </div>
+
+            <div class="landing-title text-center my-5">
+                <h5 class="sub-title custom-sub-title-font">Your Guide to Radiant Hair</h5>
+                <h2 class="custom-title-font">Comprehensive Guide - Using, Storing, Timing.</h2>
+                <p>Here is a comprehensive guide on using, storing, and timing the application of Nourishing Ayurvedic Hair Oil to maximize
+                    its benefits</p>
+            </div>
+    
+            <div class="row my-5 mx-4">
+                <div class="col-md-6">
+                    <div class="product-slider owl-carousel owl-theme" id="sync1">
+                        <div class="item">
+                            <figure class="text-center">
+                                <img class="img-fluid" style="max-height: 322px !important;" src="{% static 'assets/images/landing/apply.jpeg' %}" alt="user">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="mb-4 custom-title-font"> How to Use </h1>
+    
+                    <div class="info-part">
+                        <h6>1 Warm the Oil:</h6>
+                        <p class="c-o-light">Warm a small amount of oil by placing it in a bowl of warm water for a few minutes.</p>
+                    </div>
+                    <div class="info-part">
+                        <h6>2 Massage the Scalp:</h6>
+                        <p class="c-o-light">Gently massage the oil into the scalp using circular motions, focusing on the roots.</p>
+                    </div>
+                    <div class="info-part">
+                        <h6>3 Apply to Hair Length:</h6>
+                        <p class="c-o-light">Work the oil through the length of your hair, ensuring even coverage.</p>
+                    </div>
+                    <div class="info-part">
+                        <h6>4 Allow Absorption Time:</h6>
+                        <p class="c-o-light">Leave the oil on for at least 1-2 hours, or overnight for deeper nourishment.</p>
+                    </div>
+                    <div class="info-part">
+                        <h6>5 Rinse with Mild Shampoo:</h6>
+                        <p class="c-o-light">Wash thoroughly with a mild, natural shampoo.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row my-5 mx-4">
+                <div class="col-md-6">
+                    <h1 class="mb-4 custom-title-font"> When to Use </h1>
+    
+                    <div class="info-part">
+                        <p><span class="f-w-600 font-dark">• Evening Application for Overnight Nourishment:</span> For the best results, apply the oil in the evening before bedtime. This allows the oil to nourish and repair your hair overnight.
+                        </p>
+                    </div>
+                    <div class="info-part">
+                        <p><span class="f-w-600 font-dark">• Pre-Wash Treatment:</span> Alternatively, apply the oil at least 1-2 hours before washing your hair for a quicker treatment.
+                        </p>
+                    </div>
+                    <div class="info-part">
+                        <p><span class="f-w-600 font-dark">• Avoid Application Before Outdoor Exposure:</span> Avoid applying oil just before going out, as exposure to dust and pollution can affect the benefits.
+                        </p>
+                    </div>
+    
+                </div>
+                <div class="col-md-6">
+                    <div class="product-slider owl-carousel owl-theme" id="sync1">
+                        <div class="item">
+                            <figure class="text-center">
+                                <img class="img-fluid" style="max-height: 300px !important;" src="{% static 'assets/images/landing/when-use.png' %}" alt="user">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="shop-category-slider mx-3 my-5">
+                <div class="text-center fw-bold mb-5">
+                    <h1 class="custom-title-font">How to store</h1>
+                </div>
+                <div class="row">
+                    <div class="col mx-2">
+                        <a class="shop-box" href="#!">
+                            <img class="h-100 w-100 rounded-pill" src="{% static 'assets/storingsysbol/cooldark.png' %}" alt="phone">
+                        </a>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Cool, Dark Place</span>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Store in a cool, dry place away from direct sunlight.</span>
+                    </div>
+                    <div class="col mx-2">
+                        <a class="shop-box" href="#!">
+                            <img class="h-100 w-100 rounded-pill" src="{% static 'assets/storingsysbol/Tightly-Sealed.png' %}" alt="phone">
+                        </a>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Tightly Sealed</span>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Keep the container tightly sealed to preserve the oil’s potency.</span>
+                    </div>
+                    <div class="col mx-2">
+                        <a class="shop-box" href="#!">
+                            <img class="h-100 w-100 rounded-pill" src="{% static 'assets/storingsysbol/self-life.jpg' %}" alt="phone">
+                        </a>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Shake well before use</span>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Shake well before each use to ensure all ingredients are evenly distributed.</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="landing-title text-center my-5">
+                <h5 class="sub-title custom-sub-title-font">Indulge in the time-tested wisdom of Ayurveda with each application. Our Nourishing Hair Oil ensures your hair receives the care it deserves, leaving it soft, strong, and radiantly healthy.</h5>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

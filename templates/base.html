@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +13,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="/static/assets/images/logo/Akshada Logo3.png" type="image/x-icon">
     <link rel="shortcut icon" href="/static/assets/images/logo/Akshada Logo3.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/swiper/swiper-bundle.min.css' %}">
 
     <title>
         {% block title %}
@@ -20,6 +22,9 @@
     </title>
 
     {% block css %}
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Philosopher&display=swap" rel="stylesheet">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap"
         rel="stylesheet">
@@ -34,6 +39,13 @@
     <link rel="stylesheet" type="text/css" href="/static/assets/css/vendors/slick.css">
     <link rel="stylesheet" type="text/css" href="/static/assets/css/vendors/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="/static/assets/css/vendors/animate.css">
+    <!-- Plugins css start-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/animate.css">
+    <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="/static/assets/css/vendors/bootstrap.css">
     <!-- App css-->
@@ -41,9 +53,32 @@
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="/static/assets/css/responsive.css">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
 
     
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <style>
+    .navbar-logo {
+        height: 80px;
+      }
+      
+      @media (max-width: 1199.98px) {
+        .navbar-logo {
+          height: 30%;
+          max-height: 60px;
+        }
+      }
+
+    .custom-title-font {
+        font-family: 'Philosopher', serif;
+    }
+    .custom-sub-title-font {
+        font-family: 'Ephesis', serif;
+        font-size: 32px !important;
+    }
+    .custom-ingredient-text {
+        color: #C9A264 !important;
+    }
+    </style>
     {% endblock css %}
 
     {% block extra-css %}
@@ -72,63 +107,22 @@
                     <div class="col-lg-8 col-sm-10">
                         <div class="content text-center">
                             <div>
-                                <h6 class="content-title"><img class="arrow-decore"
-                                        src="https://admin.pixelstrap.com/cuba/assets/images/landing/decore/arrow.svg"
-                                        alt=""><span class="sub-title">Introducing </span></h6>
-                                <h1 class="wow fadeIn">Scalable Admin template with <span>trending </span> designs</h1>
-                                <p class="mt-3 wow fadeIn">Welcome to Cuba - the leading landing page templates, built
-                                    with React, Angular, flask & Vue. No jQuery!</p>
-                                <div class="btn-grp mt-4"><a class="wow pulse" href="" target="_blank"
-                                        data-bs-placement="top" data-bs-toggle="tooltip" title="HTML"> <img
-                                            src="/static/assets/images/landing/icon/html/html.png" alt=""></a><a
-                                        class="wow pulse" href="" target="_blank" data-bs-placement="top"
-                                        data-bs-toggle="tooltip" title="Angular 16"> <img
-                                            src="/static/assets/images/landing/icon/angular/angular.png" alt=""></a><a
-                                        class="wow pulse" href="" target="_blank" data-bs-placement="top"
-                                        data-bs-toggle="tooltip" title="Vue 3"> <img
-                                            src="/static/assets/images/landing/icon/vue/vue.png" alt=""></a><a
-                                        class="wow pulse" href="" target="_blank" data-bs-placement="top"
-                                        data-bs-toggle="tooltip" title="Laravel 10"> <img
-                                            src="/static/assets/images/landing/icon/laravel/laravel.png" alt=""></a><a
-                                        class="wow pulse" href="" target="_blank" data-bs-placement="top"
-                                        data-bs-toggle="tooltip" title="Django 4.0.4"> <img
-                                            src="/static/assets/images/landing/icon/django/django.png" alt=""></a><a
-                                        class="wow pulse" href="" target="_blank" data-bs-placement="top"
-                                        data-bs-toggle="tooltip" title="Flask 2.2.2"> <img
-                                            src="https://admin.pixelstrap.com/cuba/assets/images/landing/stroke-icon/7.svg"
-                                            alt=""></a><a class="wow pulse" href="" target="_blank"
-                                        data-bs-placement="top" data-bs-toggle="tooltip" title="React Context"><img
-                                            src="/static/assets/images/landing/icon/react/react.png" alt=""></a><a
-                                        class="wow pulse" href="" target="_blank" data-bs-placement="top"
-                                        data-bs-toggle="tooltip" title="PHP"> <img
-                                            src="https://admin.pixelstrap.com/cuba/assets/images/landing/stroke-icon/8.svg"
-                                            alt=""></a><a class="wow pulse" href="" target="_blank"
-                                        data-bs-placement="top" data-bs-toggle="tooltip" title="Codeigniter"> <img
-                                            src="/static/assets/images/landing/icon/codeigniter/codeigniter-icon.png"
-                                            alt=""></a><a class="wow pulse" href="" target="_blank"
-                                        data-bs-placement="top" data-bs-toggle="tooltip" title="Node"> <img
-                                            src="https://admin.pixelstrap.com/cuba/assets/images/landing/stroke-icon/10.svg"
-                                            alt=""></a><a class="wow pulse" href="javascript:void(0)"
-                                        data-bs-placement="top" data-bs-toggle="tooltip" title="Coming soon"> <img
-                                            src="https://admin.pixelstrap.com/cuba/assets/images/landing/stroke-icon/12.svg"
-                                            alt=""></a><a class="wow pulse" href="" target="_blank"
-                                        data-bs-placement="top" data-bs-toggle="tooltip" title="Nuxt"> <img
-                                            src="https://admin.pixelstrap.com/cuba/assets/images/landing/stroke-icon/14.svg"
-                                            alt=""></a><a class="wow pulse" href="" target="_blank"
-                                        data-bs-placement="top" data-bs-toggle="tooltip" title=".Net Core 7"> <img
-                                            src="https://admin.pixelstrap.com/cuba/assets/images/landing/stroke-icon/13.svg"
-                                            alt=""></a><a class="wow pulse" href="" target="_blank"
-                                        data-bs-placement="top" data-bs-toggle="tooltip" title="Next js"> <img
-                                            src="https://admin.pixelstrap.com/cuba/assets/images/landing/stroke-icon/15.svg"
-                                            alt=""></a><a class="wow pulse" href="" target="_blank"
-                                        data-bs-placement="top" data-bs-toggle="tooltip" title="Svelte"> <img
-                                            src="/static/assets/images/landing/stroke-icon/16.png" alt=""></a></div>
+                                {% comment %} <h6 class="content-title"><img class="arrow-decore"
+                                    src="https://admin.pixelstrap.com/cuba/assets/images/landing/decore/arrow.svg" alt="">
+                                    <span class="sub-title">Introducing </span>
+                                </h6>
+                                <h1 class="wow fadeIn">Akshada Ayurveda<span>Nature's Wisdom</span>for Modern Wellness</h1>
+                                <p class="mt-3 wow fadeIn">Discover the power of ancient Ayurvedic traditions combined with modern science. 
+                                    Our products are crafted with 100% natural ingredients, bringing you the essence of nature's healing.
+                                </p>
+                                <p class="mt-2 font-italic">"Embracing nature's purity in every drop, every leaf, every grain."</p> {% endcomment %}
+                                
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-8 col-md-10 text-center">
-                        <img class="screen1 img-fluid" style="max-width: 60% !important;"
-                            src="/static/assets/images/landing/screen5.webp" alt="">
+                        <img class="screen1 img-fluid" style="max-width: 70% !important;"
+                            src="/static/assets/images/landing/screen4.png" alt="">
                     </div>
                 </div>
                 {% endblock top-content %}
@@ -139,22 +133,28 @@
         {% endblock content %}
     </div>
 
+    {% block product %}
+    {% endblock product %}
+
     <!-- modal --> 
     {% if not user.is_authenticated %}
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+    {% comment %} <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div class="modal-toggle-wrapper"> 
-                <h4>Up to<strong class="txt-danger">15% OFF</strong>,On First time registrations, Hurry Up and Shop Now !</h4>
-                <div class="modal-img"><img src="/static/assets/images/gif/online-shopping.gif" alt="online-shopping"></div>
-                <p class="text-sm-center">Discover our premium cosmetic products that blend quality, comfort, and eco-friendliness. Don't miss out on exclusive discounts for first-time customers!</p>
-                <a href="{% url "accounts:register" %}" class="btn bg-primary d-flex align-items-center gap-2 text-light ms-auto justify-content-center">Register Here<i data-feather="arrow-right"></i></a>
-              </div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" onclick="closeModal()" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-toggle-wrapper"> 
+                        <h4>Up to<strong class="txt-danger">15% OFF</strong>,On First time registrations, Hurry Up and Shop Now !</h4>
+                        <div class="modal-img"><img src="/static/assets/images/gif/online-shopping.gif" alt="online-shopping"></div>
+                        <p class="text-sm-center">Discover our premium cosmetic products that blend quality, comfort, and eco-friendliness. Don't miss out on exclusive discounts for first-time customers!</p>
+                        <a href="{% url "accounts:register" %}" class="btn bg-primary d-flex align-items-center gap-2 text-light ms-auto justify-content-center">Register Here<i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-    </div>
+    </div> {% endcomment %}
     {% endif %}
 
     {% block footer %}
@@ -163,11 +163,19 @@
     </div>
 
     {% block script %}
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
-            myModal.show();
+            var modal = document.getElementById('exampleModal');
+            modal.style.display = 'block';
+            modal.classList.add('show');
         });
+    
+        function closeModal() {
+            var modal = document.getElementById('exampleModal');
+            modal.style.display = 'none';
+            modal.classList.remove('show');
+        }
     </script>
 
     <!-- latest jquery-->
@@ -186,7 +194,37 @@
     <script src="/static/assets/js/slick/slick.min.js"></script>
     <script src="/static/assets/js/slick/slick.js"></script>
     <script src="/static/assets/js/landing-slick.js"></script>
+    <script src="/static/assets/js/swiper/swiper-bundle.min.js"></script>
     <!-- Plugins JS Ends-->
+
+
+    {% comment %} <script src="{% static 'assets/js/jquery.min.js'%}"></script> {% endcomment %}
+    <!-- Bootstrap js-->
+    {% comment %} <script src="{% static 'assets/js/bootstrap/bootstrap.bundle.min.js' %}"></script> {% endcomment %}
+    <!-- feather icon js-->
+    <script src="{% static 'assets/js/icons/feather-icon/feather.min.js' %}"></script>
+    <script src="{% static 'assets/js/icons/feather-icon/feather-icon.js' %}"></script>
+    <!-- scrollbar js-->
+    <script src="{% static 'assets/js/scrollbar/simplebar.min.js' %}"></script>
+    <script src="{% static 'assets/js/scrollbar/custom.js' %}"></script>
+    <!-- Sidebar jquery-->
+    <script src="{% static 'assets/js/config.js' %}"></script>
+    <!-- Plugins JS start-->
+    <script src="{% static 'assets/js/sidebar-menu.js' %}"></script>
+    <script src="{% static 'assets/js/sidebar-pin.js' %}"></script>
+    <script src="{% static 'assets/js/slick/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick/slick.js' %}"></script>
+    <script src="{% static 'assets/js/touchspin_2/custom_touchspin.js' %}"></script>
+    <script src="{% static 'assets/js/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/custom-swiper/custom_swiper1.js' %}"></script>
+    <script src="{% static 'assets/js/dashboard/dashboard_8.js' %}"></script>
+    <script src="{% static 'assets/js/height-equal.js' %}"></script>
+    <!-- Plugins JS Ends-->
+    <!-- Theme js-->
+    <script src="{% static 'assets/js/script.js' %}"></script>
+    <script src="{% static 'assets/js/script1.js' %}"></script>
+    
+
     {% endblock script %}
 
     {% block extra-js %}

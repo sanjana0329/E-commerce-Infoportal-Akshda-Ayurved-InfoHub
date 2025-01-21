@@ -24,13 +24,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('PROJECT_SECRET_KEY')
+# SECRET_KEY = os.getenv('PROJECT_SECRET_KEY')
+SECRET_KEY = 'django-insecure-xukj$v2_6sgg_us-03_2nb%kh-3zf&(-s4@sl52d!ar@bj)qm1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 # ALLOWED_HOSTS = ["localhost","*",".herokuapp.com"]
-ALLOWED_HOSTS = ast.literal_eval(os.getenv('ALLOWED_HOSTS', '[]'))
+# ALLOWED_HOSTS = ast.literal_eval(os.getenv('ALLOWED_HOSTS', '[]'))
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -86,26 +88,27 @@ WSGI_APPLICATION = 'cosmetic.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-USE_POSTGRES = os.getenv('USE_POSTGRES', 'False').lower() == 'true'
+# USE_POSTGRES = os.getenv('USE_POSTGRES', 'False').lower() == 'true'
 
-if USE_POSTGRES:
-    DATABASES = {
-        'default': {
-            'ENGINE': os.getenv('DB_ENGINE_NAME'),
-            'NAME': os.getenv('DB_NAME_POSGRES'),
-            'USER': os.getenv('DB_USER'),
-            'PASSWORD': os.getenv('DB_PASSWORD'),
-            'HOST': os.getenv('DB_HOST'),
-            'PORT': os.getenv('DB_PORT'),
-        }
+# if USE_POSTGRES:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': os.getenv('DB_ENGINE_NAME'),
+#             'NAME': os.getenv('DB_NAME_POSGRES'),
+#             'USER': os.getenv('DB_USER'),
+#             'PASSWORD': os.getenv('DB_PASSWORD'),
+#             'HOST': os.getenv('DB_HOST'),
+#             'PORT': os.getenv('DB_PORT'),
+#         }
+#     }
+# else:
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / os.getenv('DB_NAME', 'db.sqlite3'),
     }
-else:
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": BASE_DIR / os.getenv('DB_NAME', 'db.sqlite3'),
-        }
-    }
+}
 
 # db_from_env = dj_database_url.config(conn_max_age=600)
 # DATABASES['default'].update(db_from_env)
@@ -132,9 +135,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = os.getenv('LANGUAGE_CODE')
+# LANGUAGE_CODE = os.getenv('LANGUAGE_CODE')
+# TIME_ZONE = os.getenv('TIME_ZONE')
 
-TIME_ZONE = os.getenv('TIME_ZONE')
+LANGUAGE_CODE='en-us'
+TIME_ZONE='Asia/Kolkata'
 
 USE_I18N = True
 

@@ -1,17 +1,25 @@
-<nav class="navbar navbar-b navbar-dark navbar-trans navbar-expand-xl fixed-top nav-padding" id="sidebar-menu"><a class="navbar-brand p-0" href="#">
-    <img class="img-fluid" style="height: 80px !important;" src="/static/assets/images/logo/Akshada Logo3.png" alt=""></a>
+<nav class="navbar navbar-b navbar-dark navbar-trans navbar-expand-xl fixed-top nav-padding" id="sidebar-menu">
+  <a class="navbar-brand p-0 d-flex align-items-center" href="#">
+    <img class="img-fluid navbar-logo" src="/static/assets/images/logo/Akshada Logo4.png" alt="" style="height: 80px;">
+    <div class="ms-1 d-none d-sm-block text-start">
+      <h2 class="mb-0" style="color: #C9A264; font-family: 'Playfair Display', serif;">AKSHADA</h2>
+      <small style="color: #C9A264; font-family: 'Playfair Display', serif;">ayurveda</small>
+    </div>
+  </a>
     <button class="navbar-toggler navabr_btn-set custom_nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
     <div class="navbar-collapse justify-content-center collapse hidenav" id="navbarDefault">
       <ul class="navbar-nav navbar_nav_modify" id="scroll-spy">
-        <li class="nav-item"><a class="nav-link" href="#layout">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" id="skinCareDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Skin Care
           </a>
           <ul class="dropdown-menu" aria-labelledby="skinCareDropdown">
-            <li><a class="dropdown-item" href="#cleansers">Cleansers</a></li>
-            <li><a class="dropdown-item" href="#moisturizers">Moisturizers</a></li>
-            <li><a class="dropdown-item" href="#serums">Serums</a></li>
+            <li><a class="dropdown-item" href="{% url "core:facial_ubtan" %}">Facial Ubtan</a></li>
+            <li><a class="dropdown-item" href="{% url "core:kumkumadi_oil" %}">Kumkumadi Oil</a></li>
+            <li><a class="dropdown-item" href="{% url "core:peel_off_mask" %}">Brightening Peel of Mask</a></li>
+            <li><a class="dropdown-item" href="{% url "core:bentonite_clay_mask" %}">Benetonite Clay Mask</a></li>
+            <li><a class="dropdown-item" href="{% url "core:moroccan_clay_mask" %}">Moroccan Clay Mask</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -19,28 +27,22 @@
             Hair Care
           </a>
           <ul class="dropdown-menu" aria-labelledby="hairCareDropdown">
-            <li><a class="dropdown-item" href="#shampoos">Shampoos</a></li>
-            <li><a class="dropdown-item" href="#conditioners">Conditioners</a></li>
-            <li><a class="dropdown-item" href="#treatments">Treatments</a></li>
+            <li><a class="dropdown-item" href="{% url "core:hair_oil" %}">Hair Oil</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="#applications">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#landings">privacy policy</a></li>
-        <li class="nav-item"><a class="nav-link" href="#documentation">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url "core:about" %}">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url "core:privacy_policy" %}">privacy policy</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url "core:contactus" %}">Contact Us</a></li>
       </ul>
     </div>
-    <div class="">
-      <a class="nav-link js-scroll" href="" style="font-size: 1.4rem; color: #C45F1E;">
-        <i class="fa-brands fa-instagram" style="vertical-align: middle;"></i>
-      </a>
+    <div class="mx-2">
+      <a href="https://www.instagram.com/akshadaayurveda?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="btn-pill btn-outline-primary border border-primary" style="width: 45px; height: 45px; display: flex; justify-content: center; align-items: center; font-size: 1.4rem;"><i class="fa-brands fa-instagram"></i></a>
     </div>
-    <div class="mx-3">
-      <a class="nav-link js-scroll" href="" style="font-size: 1.4rem; color: #C45F1E;">
-        <i class="fa-brands fa-facebook" style="vertical-align: middle;"></i>
-      </a>
+    <div class="">
+      <a href="https://www.facebook.com/AkshadaAyurveda/" target="_blank" class="btn-pill btn-outline-primary border border-primary" style="width: 45px; height: 45px; display: flex; justify-content: center; align-items: center; font-size: 1.4rem;"><i class="fa-brands fa-facebook"></i></a>
     </div>
     {% if user.is_authenticated %}
-    <div class="dropdown">
+    <div class="dropdown mx-2">
       <a class="nav-link js-scroll" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 1.4rem; color: #C45F1E;">
         <i class="fa-solid fa-user" style="vertical-align: middle;"></i>
       </a>
@@ -48,15 +50,16 @@
         <li><a class="dropdown-item">{{ request.user.username }}</a></li>
         <li><a class="dropdown-item" href="#">My Profile</a></li>
         <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Log Out</a></li>
+        <li><a class="dropdown-item" href="{% url "accounts:logout" %}">Log Out</a></li>
       </ul>
     </div>
     {% else %}
-    <div class="">
-      <a class="nav-link js-scroll" href="{% url "accounts:login" %}" style="font-size: 1.2rem; color: #C45F1E;">
+    <div class="mx-2">
+      {% comment %} <a class="nav-link js-scroll" href="{% url "accounts:login" %}" style="font-size: 1.2rem; color: #C45F1E;">
         <i class="fa-solid fa-right-to-bracket" style="vertical-align: middle; margin-right: 5px;"></i>
-        <span style="font-size: 1.1rem;">Log In</span>
-      </a>
+        <span style="font-size: 1.1rem;"></span>
+      </a> {% endcomment %}
+      <a href="{% url "accounts:login" %}" class="btn-pill btn-outline-primary border border-primary" style="width: 45px; height: 45px; display: flex; justify-content: center; align-items: center; font-size: 1.4rem;"><i class="fa-solid fa-right-to-bracket"></i></a>
     </div>
     {% endif %}
   </nav>

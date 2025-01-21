@@ -1,0 +1,268 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Facial Ubtan
+{% endblock title %}
+
+
+
+{% block top-content %}
+  <div class="row justify-content-center">
+      <div class="col-lg-8 col-sm-10">
+          <div class="content text-center">
+              <div>
+                  <h6 class="content-title"><img class="arrow-decore"
+                      src="https://admin.pixelstrap.com/cuba/assets/images/landing/decore/arrow.svg" alt="">
+                      <span class="sub-title mb-5 custom-sub-title-font">Discover Natural and Modern Skincare</span>
+                  </h6>
+                  {% comment %} <h1 class="wow fadeIn">Kumkumadi Oil</h1> {% endcomment %}
+              </div>
+          </div>
+      </div>
+      <div class="col-xl-7 col-lg-8 col-md-10 text-center">
+          {% comment %} <img class="screen1 img-fluid" style="max-width: 60% !important;"
+              src="/static/assets/images/landing/screen5.webp" alt=""> {% endcomment %}
+      </div>
+  </div>
+{% endblock top-content %}
+
+{% block content %}
+<div class="page-wrapper compact-wrapper" id="pageWrapper">
+
+
+    <div class="container-fluid">
+        <div>
+            <div class="row product-page-main p-0">
+                <div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="product-slider owl-carousel owl-theme" id="sync1">
+                                        <div class="item d-flex justify-content-center">
+                                            <figure class="h-50 w-50"
+                                                style="background-image: url(../assets/images/ecommerce/01.jpg)">
+                                                <img class="img-fluid" style="max-height: 300px !important;" src="{% static 'assets/images/ecommerce/01.jpg' %}"
+                                                    alt="user">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 w-full">
+                                    <div class="landing-title">
+                                        {% comment %} <h3>Women's Top</h3> {% endcomment %}
+                                        <h2><span class="custom-title-font">Facial Ubtan</span></h2>
+                                    </div>
+                                    <p>Ubtan is a rejuvenating facial mask that can also be used for the body to effectively remove dirt and impurities. This natural formulation helps to nourish and revitalize the skin, leaving it looking fresh and glowing. By applying ubtan regularly, you can enhance skin texture, while also benefiting from its cleansing properties, making it an excellent choice for a gentle, all-over body treatment.  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+    
+            <div class="card">
+                <div class="card-header card-no-border">
+                    <div class="header-top">
+                        <h5 class="custom-title-font">Key Ingredients</h5>
+                        {% comment %} <div class="card-header-right-btn"><a class="c-o-light" href="#!">View
+                                All </a></div> {% endcomment %}
+                    </div>
+                </div>
+                <div class="card-body pt-0">
+                    <div class="slider-wrapper arrow-round">
+                        <div class="swiper shop-category-slider mx-3">
+                            <div class="swiper-wrapper d-flex justify-content-between">
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-50 w-50" src="{% static 'assets/Ingredients/scandalwood.png' %}" alt="phone">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Sandalwood</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-50 w-50" src="{% static 'assets/Ingredients/Saffron.png' %}" alt="Camera">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Davana</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-75 w-75" src="{% static 'assets/Ingredients/Turmeric.png' %}" alt="phone">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Sugandhi vala</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-75 w-75" src="{% static 'assets/Ingredients/Jasmine.png' %}" alt="Camera">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Kapur Kachari</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-100 w-100" src="{% static 'assets/Ingredients/BlackMustardSeed.png' %}" alt="phone">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Jatamansi</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-75 w-75" src="{% static 'assets/Ingredients/Lotus.png' %}" alt="Camera">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Patchouli</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-75 w-75" src="{% static 'assets/Ingredients/SesameSeedOil.png' %}" alt="phone">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Tulsi</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-75 w-75" src="{% static 'assets/Ingredients/SugandhiValo.png' %}" alt="Camera">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Haldi</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row my-5 mx-4">
+                {% comment %} <div class="col-md-6">
+                    <div class=" text-center">
+                        <h5 class="sub-title mb-4 custom-sub-title-font">Benefits of Kumkumadi Oil</h5>
+                        <p class="f-24 mb-4 custom-title-font">
+                            Kumkumadi oil is suitable for all skin types and is primarily recommended for its brightening,
+                            anti-aging, and skin-repairing properties. It helps in
+                        </p>
+                        <p> • Reducing pigmentation and dark spots. </p>
+                        <p> • Brightening and evening out the skin tone. </p>
+                        <p> • Enhancing natural radiance and glow. </p>
+                        <p> • Moisturizing and nourishing the skin. </p>
+                        <p> • Smoothing the skin texture and reducing signs of aging. </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-slider owl-carousel owl-theme" id="sync1">
+                        <div class="item">
+                            <figure class="">
+                                <img class="img-fluid" src="{% static 'assets/images/landing/kumkum-oil.png' %}" alt="user">
+                            </figure>
+                        </div>
+                    </div>
+                </div> {% endcomment %}
+                <p class="f-24 custom-title-font text-center">
+                    Together, these ingredients create a nourishing, aromatic ubtan that exfoliates, clarifies, and rejuvenates the skin, leaving it soft, smooth, and beautifully radiant. Perfect for a natural skincare ritual, this ubtan enhances skin tone and texture, delivering the essence of traditional Ayurvedic care in every use.
+                </p>
+            </div>
+
+            <div class="landing-title text-center my-5">
+                <h5 class="sub-title custom-sub-title-font">Your Guide to Radiant Skin</h5>
+                <h2 class="custom-title-font">Comprehensive Guide - Using, Storing, Timing.</h2>
+                <p>Here is a comprehensive guide on using, storing, and timing the application of Facial Ubtan to maximize
+                    its benefits</p>
+            </div>
+    
+            <div class="row my-5 mx-4">
+                <div class="col-md-6">
+                    <div class="product-slider owl-carousel owl-theme" id="sync1">
+                        <div class="item">
+                            <figure class="text-center">
+                                <img class="img-fluid" style="max-height: 322px !important;" src="{% static 'assets/images/landing/facial-ubtan-apply.webp' %}" alt="user">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="mb-4 custom-title-font"> How to Use </h1>
+    
+                    <div class="info-part">
+                        <h6>1 Prepare the Ubtan Paste:</h6>
+                        <p class="c-o-light">Take a small amount of ubtan powder and mix it with water, rosewater, milk, or yogurt to create a smooth paste.</p>
+                    </div>
+                    <div class="info-part">
+                        <h6>2 Apply to Damp Skin:</h6>
+                        <p class="c-o-light">Gently apply the paste to damp skin, covering the face and body if desired.</p>
+                    </div>
+                    <div class="info-part">
+                        <h6>3 Exfoliate with Gentle Massage:</h6>
+                        <p class="c-o-light">Massage in gentle, circular motions for a few minutes to exfoliate and boost circulation.</p>
+                    </div>
+                    <div class="info-part">
+                        <h6>4 Allow Nourishment Time:</h6>
+                        <p class="c-o-light">Leave the ubtan on for 5-10 minutes, allowing the ingredients to deeply nourish and purify the skin.</p>
+                    </div>
+                    <div class="info-part">
+                        <h6>5 Rinse and Pat Dry:</h6>
+                        <p class="c-o-light">Rinse off with lukewarm water and pat dry.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row my-5 mx-4">
+                <div class="col-md-6">
+                    <h1 class="mb-4 custom-title-font"> When to Use </h1>
+    
+                    <div class="info-part">
+                        <p><span class="f-w-600 font-dark">• Use 2-3 Times Weekly:</span> For best results, apply the ubtan 2-3 times a week to maintain healthy and glowing skin.
+                        </p>
+                    </div>
+                    <div class="info-part">
+                        <p><span class="f-w-600 font-dark">• Morning for Refreshing Start:</span> Use the ubtan in the morning to refresh and rejuvenate your skin, leaving it soft and radiant for the day ahead.
+                        </p>
+                    </div>
+                    <div class="info-part">
+                        <p><span class="f-w-600 font-dark">• Evening for Deep Cleansing:</span> Apply the ubtan in the evening to deeply cleanse your skin, removing impurities and leaving it nourished and purified.
+                        </p>
+                    </div>
+    
+                </div>
+                <div class="col-md-6">
+                    <div class="product-slider owl-carousel owl-theme" id="sync1">
+                        <div class="item">
+                            <figure class="text-center">
+                                <img class="img-fluid" style="max-height: 300px !important;" src="{% static 'assets/images/landing/whenuse-facialubtan.png' %}" alt="user">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="shop-category-slider mx-3 my-5">
+                <div class="text-center fw-bold mb-5">
+                    <h1 class="custom-title-font">How to store</h1>
+                </div>
+                <div class="row">
+                    <div class="col mx-2">
+                        <a class="shop-box" href="#!">
+                            <img class="h-100 w-100 rounded-pill" src="{% static 'assets/storingsysbol/cooldark.png' %}" alt="phone">
+                        </a>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Avoid Direct Sunlight and Heat</span>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Place the container in a cool, dry area away from sunlight and heat to preserve its freshness.</span>
+                    </div>
+                    <div class="col mx-2">
+                        <a class="shop-box" href="#!">
+                            <img class="h-100 w-100 rounded-pill" src="{% static 'assets/storingsysbol/Tightly-Sealed.png' %}" alt="phone">
+                        </a>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Store in an Airtight Container</span>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Keep the ubtan in a tightly sealed container to protect it from air and moisture.</span>
+                    </div>
+                    <div class="col mx-2">
+                        <a class="shop-box" href="#!">
+                            <img class="h-100 w-100 rounded-pill" src="{% static 'assets/storingsysbol/self-life.jpg' %}" alt="phone">
+                        </a>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Seal After Each Use</span>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Always close the container securely after use to prevent exposure to humidity and maintain its effectiveness.</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="landing-title text-center my-5">
+                <h5 class="sub-title custom-sub-title-font">Following these guidelines will ensure that your facial ubtan stays fresh and effective, delivering optimal results with regular use.</h5>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

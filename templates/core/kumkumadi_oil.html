@@ -1,0 +1,391 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Kumkumadi Oil
+{% endblock title %}
+
+
+
+{% block top-content %}
+  <div class="row justify-content-center">
+      <div class="col-lg-8 col-sm-10">
+          <div class="content text-center">
+              <div>
+                  <h6 class="content-title"><img class="arrow-decore"
+                      src="https://admin.pixelstrap.com/cuba/assets/images/landing/decore/arrow.svg" alt="">
+                      <span class="sub-title mb-5 custom-sub-title-font">Discover Natural and Modern Skincare</span>
+                  </h6>
+                  {% comment %} <h1 class="wow fadeIn">Kumkumadi Oil</h1> {% endcomment %}
+              </div>
+          </div>
+      </div>
+      <div class="col-xl-7 col-lg-8 col-md-10 text-center">
+          {% comment %} <img class="screen1 img-fluid" style="max-width: 60% !important;"
+              src="/static/assets/images/landing/screen5.webp" alt=""> {% endcomment %}
+      </div>
+  </div>
+{% endblock top-content %}
+
+{% block content %}
+<div class="page-wrapper compact-wrapper" id="pageWrapper">
+
+
+    <div class="container-fluid">
+        <div>
+            <div class="row product-page-main p-0">
+                <div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="product-slider owl-carousel owl-theme" id="sync1">
+                                        <div class="item d-flex justify-content-center">
+                                            <figure class="h-50 w-50"
+                                                style="background-image: url(../assets/images/ecommerce/01.jpg)">
+                                                <img class="img-fluid" style="max-height: 300px !important;" src="{% static 'assets/images/ecommerce/01.jpg' %}"
+                                                    alt="user">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 w-full">
+                                    <div class="landing-title">
+                                        {% comment %} <h3>Women's Top</h3> {% endcomment %}
+                                        <h2><span class="custom-title-font">Kumkumadi oil</span></h2>
+                                    </div>
+                                    <p>Kumkumadi oil is a traditional Ayurvedic facial oil crafted with a blend of herbs,
+                                        oils, and botanical extracts, renowned for its skin-enhancing properties. This
+                                        luxurious oil is designed to improve skin texture, enhance radiance, and even out
+                                        skin tone. Each ingredient in Kumkumadi oil is carefully selected to nourish and
+                                        rejuvenate the skin deeply. </p>
+                                    {% comment %} <div>
+                                        <table class="product-page-width">
+                                            <tbody>
+                                                <tr>
+                                                    <td> <b>Brand &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
+                                                    <td>Pixelstrap</td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <b>Availability &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
+                                                    <td class="txt-success f-w-700">In Stock</td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <b>Seller &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
+                                                    <td>Hector Magana</td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <b>Material &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
+                                                    <td>Cotton</td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <b>Fit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
+                                                    <td>Regular Fit</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div> {% endcomment %}
+                                    {% comment %}
+                                    <hr>
+                                    <div class="row g-sm-3 g-1">
+                                        <div class="col-sm-4">
+                                            <h6 class="product-title">Share</h6>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="product-icon">
+                                                <ul class="product-social">
+                                                    <li class="d-inline-block"><a href="https://www.facebook.com/"
+                                                            target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                    <li class="d-inline-block"><a href="https://in.pinterest.com/"
+                                                            target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+                                                    </li>
+                                                    <li class="d-inline-block"><a href="https://twitter.com/"
+                                                            target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                                    <li class="d-inline-block"><a href="https://www.instagram.com/"
+                                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                                    <li class="d-inline-block"><a href="https://rss.app/" target="_blank"><i
+                                                                class="fa-solid fa-rss"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr> {% endcomment %}
+                                    {% comment %} <div class="row g-sm-3 g-1">
+                                        <div class="col-sm-4">
+                                            <h6 class="product-title">Quantity</h6>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="touchspin-wrapper">
+                                                <button class="decrement-touchspin btn-touchspin touchspin-primary"><i
+                                                        class="fa fa-minus"></i></button>
+                                                <input class="input-touchspin spin-outline-primary" type="number" value="1"
+                                                    readonly>
+                                                <button class="increment-touchspin btn-touchspin touchspin-primary"><i
+                                                        class="fa fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row g-sm-3 g-1">
+                                        <div class="col-sm-4">
+                                            <h6 class="product-title">Rate Now</h6>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="main-star-rating common-f-start">
+                                                <div class="common-flex star-box"><i class="fa-solid fa-star active"></i><i
+                                                        class="fa-solid fa-star active"></i><i
+                                                        class="fa-solid fa-star active"></i><i
+                                                        class="fa-solid fa-star active"></i><i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span>(250 review)</span>
+                                            </div>
+                                        </div>
+                                    </div> {% endcomment %}
+                                    {% comment %}
+                                    <hr>
+                                    <div class="m-t-15 btn-showcase">
+                                        <a class="btn btn-primary btn-hover-effect" href="cart.html"><i
+                                                class="fa-solid fa-cart-shopping me-1"></i>Add To Cart</a>
+                                        <a class="btn btn-danger btn-hover-effect" href="list-wish.html"> <i
+                                                class="fa-solid fa-heart me-1"></i>Add To WishList</a>
+                                    </div> {% endcomment %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+    
+            <div class="card">
+                <div class="card-header card-no-border">
+                    <div class="header-top">
+                        <h5 class="custom-title-font">Key Ingredients and Benefits</h5>
+                        {% comment %} <div class="card-header-right-btn"><a class="c-o-light" href="#!">View
+                                All </a></div> {% endcomment %}
+                    </div>
+                </div>
+                <div class="card-body pt-0">
+                    <div class="slider-wrapper arrow-round">
+                        <div class="swiper shop-category-slider mx-3">
+                            <div class="swiper-wrapper d-flex justify-content-between">
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-50 w-50" src="{% static 'assets/Ingredients/scandalwood.png' %}" alt="phone">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">ScandalWood</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-50 w-50" src="{% static 'assets/Ingredients/Saffron.png' %}" alt="Camera">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Kesar (Saffron)</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-75 w-75" src="{% static 'assets/Ingredients/Turmeric.png' %}" alt="phone">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Turmeric</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-75 w-75" src="{% static 'assets/Ingredients/Jasmine.png' %}" alt="Camera">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Chameli (Jasmine)</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-100 w-100" src="{% static 'assets/Ingredients/BlackMustardSeed.png' %}" alt="phone">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Min Sarsav (Black Mustard Seed)</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-75 w-75" src="{% static 'assets/Ingredients/Lotus.png' %}" alt="Camera">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Lotus</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-75 w-75" src="{% static 'assets/Ingredients/SesameSeedOil.png' %}" alt="phone">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Sesame Seed Oil</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-75 w-75" src="{% static 'assets/Ingredients/SugandhiValo.png' %}" alt="Camera">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Sugandhi Valo (Vetiver)</span>
+                                </div>
+                                {% comment %} <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-50 w-50" src="{% static 'assets/Ingredients/scandalwood.png' %}" alt="phone">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">ScandalWood</span>
+                                </div>
+                                <div class="swiper-slide mx-2">
+                                    <a class="shop-box" href="#!">
+                                        <img class="h-50 w-50" src="{% static 'assets/Ingredients/Saffron.png' %}" alt="Camera">
+                                    </a>
+                                    <span class="m-t-10 category-title f-w-500 text-gray">Kesar (Saffron)</span>
+                                </div> {% endcomment %}
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row my-5 mx-4">
+                <div class="col-md-6">
+                    <div class=" text-center">
+                        <h5 class="sub-title mb-4 custom-sub-title-font">Benefits of Kumkumadi Oil</h5>
+                        <p class="f-24 mb-4 custom-title-font">
+                            Kumkumadi oil is suitable for all skin types and is primarily recommended for its brightening,
+                            anti-aging, and skin-repairing properties. It helps in
+                        </p>
+                        <p> • Reducing pigmentation and dark spots. </p>
+                        <p> • Brightening and evening out the skin tone. </p>
+                        <p> • Enhancing natural radiance and glow. </p>
+                        <p> • Moisturizing and nourishing the skin. </p>
+                        <p> • Smoothing the skin texture and reducing signs of aging. </p>
+    
+                        {% comment %} <p class="f-24 mt-4 custom-title-font">
+                            This oil can be applied directly to the face or mixed with a moisturizer. Regular use,
+                            especially at night, helps restore a youthful glow and a healthy complexion.
+                        </p> {% endcomment %}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-slider owl-carousel owl-theme" id="sync1">
+                        <div class="item">
+                            <figure class="">
+                                <img class="img-fluid" src="{% static 'assets/images/landing/kumkum-oil.png' %}" alt="user">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <p class="f-24 custom-title-font text-center">
+                    This oil can be applied directly to the face or mixed with a moisturizer. Regular use,
+                    especially at night, helps restore a youthful glow and a healthy complexion.
+                </p>
+            </div>
+
+            <div class="landing-title text-center my-5">
+                <h5 class="sub-title custom-sub-title-font">Your Guide to Radiant Skin</h5>
+                <h2 class="custom-title-font">Comprehensive Guide - Using, Storing, Timing.</h2>
+                <p>Here is a comprehensive guide on using, storing, and timing the application of Kumkumadi oil to maximize
+                    its benefits</p>
+            </div>
+    
+            <div class="row my-5 mx-4">
+                <div class="col-md-6">
+                    <div class="product-slider owl-carousel owl-theme" id="sync1">
+                        <div class="item">
+                            <figure class="text-center">
+                                <img class="img-fluid" style="max-height: 322px !important;" src="{% static 'assets/images/landing/apply.jpeg' %}" alt="user">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="mb-4 custom-title-font"> How to Use </h1>
+    
+                    <div class="info-part">
+                        <h6>1 Cleanse:</h6>
+                        <p class="c-o-light">Start by cleansing your face to remove any dirt, oil, or makeup.</p>
+                    </div>
+                    <div class="info-part">
+                        <h6>2 Application:</h6>
+                        <p class="c-o-light">Take 2-3 drops of Kumkumadi oil on your fingertips. Gently warm it between your
+                            fingers.</p>
+                    </div>
+                    <div class="info-part">
+                        <h6>3 Massage:</h6>
+                        <p class="c-o-light">Apply the oil evenly across your face and neck. Gently massage in upward
+                            circular motions for 3-5 minutes, focusing on areas with pigmentation or dullness.</p>
+                    </div>
+                    <div class="info-part">
+                        <h6>4 Absorption:</h6>
+                        <p class="c-o-light"> Leave the oil on for 20-30 minutes, then rinse with lukewarm water or leave it
+                            overnight for deeper absorption if your skin is comfortable with it.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row my-5 mx-4">
+                <div class="col-md-6">
+                    <h1 class="mb-4 custom-title-font"> When to Use </h1>
+    
+                    <div class="info-part">
+                        <p><span class="f-w-600 font-dark">• At Night:</span> Kumkumadi oil is best applied at night, as it
+                            allows the skin to absorb the nutrients without exposure to sun and environmental pollutants.
+                        </p>
+                    </div>
+                    <div class="info-part">
+                        <p><span class="f-w-600 font-dark">• Frequency:</span> For dry or normal skin, use it every night.
+                            For sensitive or oily skin, start by using it 2-3 times a week and gradually increase as needed.
+                        </p>
+                    </div>
+                    <div class="info-part">
+                        <p><span class="f-w-600 font-dark">• Avoid Direct Sun Exposure:</span> Since Kumkumadi oil contains
+                            ingredients like saffron and turmeric, which may increase sensitivity to sunlight, it’s best to
+                            avoid direct sun exposure immediately after applying.
+                        </p>
+                    </div>
+    
+                </div>
+                <div class="col-md-6">
+                    <div class="product-slider owl-carousel owl-theme" id="sync1">
+                        <div class="item">
+                            <figure class="text-center">
+                                <img class="img-fluid" style="max-height: 300px !important;" src="{% static 'assets/images/landing/whenuse.png' %}" alt="user">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="shop-category-slider mx-3 my-5">
+                <div class="text-center fw-bold mb-5">
+                    <h1 class="custom-title-font">How to store</h1>
+                </div>
+                <div class="row">
+                    <div class="col mx-2">
+                        <a class="shop-box" href="#!">
+                            <img class="h-100 w-100 rounded-pill" src="{% static 'assets/storingsysbol/cooldark.png' %}" alt="phone">
+                        </a>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Cool, Dark Place</span>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Store Kumkumadi oil in a cool, dark place,
+                            away from direct sunlight and heat, as this can degrade the natural ingredients.</span>
+                    </div>
+                    <div class="col mx-2">
+                        <a class="shop-box" href="#!">
+                            <img class="h-100 w-100 rounded-pill" src="{% static 'assets/storingsysbol/Tightly-Sealed.png' %}" alt="phone">
+                        </a>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Tightly Sealed</span>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Ensure the cap is tightly closed after each
+                            use to prevent oxidation.</span>
+                    </div>
+                    <div class="col mx-2">
+                        <a class="shop-box" href="#!">
+                            <img class="h-100 w-100 rounded-pill" src="{% static 'assets/storingsysbol/self-life.jpg' %}" alt="phone">
+                        </a>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Shelf Life</span>
+                        <span class="m-t-10 category-title f-w-500 text-gray">Check the expiration date, and use within that
+                            timeframe for maximum efficacy.</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="landing-title text-center my-5">
+                <h5 class="sub-title custom-sub-title-font">Following these guidelines will help ensure that your Kumkumadi oil remains potent and
+                    effective, providing optimal results with regular use.</h5>
+                {% comment %} <h2>Comprehensive Guide - <span class="gradient-7">Using, Storing, Timing.</span></h2> {%
+                endcomment %}
+                {% comment %} <p>Following these guidelines will help ensure that your Kumkumadi oil remains potent and
+                    effective, providing optimal results with regular use.</p> {% endcomment %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

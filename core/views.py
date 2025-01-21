@@ -67,3 +67,102 @@ class MyProfileView(View):
         ...
         
 
+# FOR CONTACT US
+# @method_decorator(has_permissions_mixin, name='dispatch')
+class ContactUsView(View):
+    template_name = './core/contactus.html'
+
+    def get(self, request):
+        form = ContactUsForm()
+        context = {'form': form}
+        return render(request, self.template_name, context=context)
+
+    def post(self, request):
+        form = ContactUsForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your message has been sent successfully!')
+            return redirect('core:contactus')  # Redirect to the same page after successful submission
+        context = {'form': form}
+        return render(request, self.template_name, context=context)
+    
+class FacialUbtanView(View):
+    template_name = './core/facialubtan.html'
+
+    def get(self, request):
+        context = {}
+        return render(request, self.template_name, context=context)
+
+    def post(self, request):
+        ...
+
+class KumkumadiOilView(View):
+    template_name = './core/kumkumadi_oil.html'
+
+    def get(self, request):
+        context = {}
+        return render(request, self.template_name, context=context)
+
+    def post(self, request):
+        ...
+
+class PeelOfMaskView(View):
+    template_name = './core/peel_of_mask.html'
+
+    def get(self, request):
+        context = {}
+        return render(request, self.template_name, context=context)
+
+    def post(self, request):
+        ...
+
+class BenetoniteClayMaskView(View):
+    template_name = './core/benetonite_clay_mask.html'
+
+    def get(self, request):
+        context = {}
+        return render(request, self.template_name, context=context)
+
+    def post(self, request):
+        ...
+
+class MorrocanClayMaskView(View):
+    template_name = './core/moroccan_clay_mask.html'
+
+    def get(self, request):
+        context = {}
+        return render(request, self.template_name, context=context)
+
+    def post(self, request):
+        ...
+        
+class HairOilView(View):
+    template_name = './core/hair_oil.html'
+
+    def get(self, request):
+        context = {}
+        return render(request, self.template_name, context=context)
+
+    def post(self, request):
+        ...
+        
+class PrivacyPolicyView(View):
+    template_name = './core/privacy_policy.html'
+
+    def get(self, request):
+        context = {}
+        return render(request, self.template_name, context=context)
+
+    def post(self, request):
+        ...
+
+class AboutUsView(View):
+    template_name = './core/about.html'
+
+    def get(self, request):
+        context = {}
+        return render(request, self.template_name, context=context)
+
+    def post(self, request):
+        ...
+

@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+
+{% block title %}
+Contact Us
+{% endblock title %}
+
+{% block top-content %}
+  <div class="row justify-content-center">
+      <div class="col-lg-8 col-sm-10">
+          <div class="content text-center">
+              <div>
+                  <h6 class="content-title"><img class="arrow-decore"
+                      src="https://admin.pixelstrap.com/cuba/assets/images/landing/decore/arrow.svg" alt="">
+                      <span class="sub-title">If have any query</span>
+                  </h6>
+                  <h1 class="wow fadeIn">Conect with Us</h1>
+              </div>
+          </div>
+      </div>
+      <div class="col-xl-7 col-lg-8 col-md-10 text-center">
+          {% comment %} <img class="screen1 img-fluid" style="max-width: 60% !important;"
+              src="/static/assets/images/landing/screen5.webp" alt=""> {% endcomment %}
+      </div>
+  </div>
+{% endblock top-content %}
+
+{% block content %}
+
+<div class="bottom-section-grad">
+  <section class="faq-section section-space" id="faq">
+    <div class="container">
+      <div class="row"> 
+        <div class="col-sm-12">
+          <div class="landing-title text-center">
+            <h5 class="sub-title">Frequently Ask Question</h5>
+            <h2>Do you have <span class="gradient-11">any Question? </span></h2>
+            <p>We're here to help! Whether you have inquiries about our products or services, need support, or just want to submit feedback, our team is ready to assist you. Your questions and feedback are important to us.</p>
+          </div>
+          <div class="vector-image"> <img src="https://admin.pixelstrap.com/cuba/assets/images/landing/vectors/4.svg" alt="vector women"></div>
+        </div>
+        <div class="col-sm-12"> 
+          
+          {% comment %} <div class="card"> {% endcomment %}
+            <div class="card-body">
+              <div class="card-wrapper border rounded-3">
+                <form class="row g-3 floating-wrapper" method="post">
+                  {% csrf_token %}
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      {{ form.full_name }}
+                      <label for="{{ form.full_name.id_for_label }}">Full Name</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      {{ form.email }}
+                      <label for="{{ form.email.id_for_label }}">Email Address</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      {{ form.contact_no }}
+                      <label for="{{ form.contact_no.id_for_label }}">Contact Number</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      {{ form.comments }}
+                      <label for="{{ form.comments.id_for_label }}">Your Message</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          {% comment %} </div> {% endcomment %}
+
+        </div>
+      </div>
+    </div>
+  </section>
+  {% comment %} <section class="pricing-section section-space pt-0">
+    <ul class="decoration">
+      <li class="loader-line-gif"><img src="/static/assets/images/landing/gifs/6.gif" alt=""></li>
+      <li class="loader-gif"><span class="loader-1"></span></li>
+    </ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="landing-title text-start">
+            <h5 class="sub-title">Our license</h5>
+            <h2>Take a Look at Our <span class="gradient-12">Engagement Models</span></h2>
+            <p class="mx-0">
+              We've made it simple for customers to get in touch with us and get their 
+              solutions woven. We definitely make sure to present ourselves in the best light 
+              and provide the most value for the money.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-7"> 
+          <div class="row g-3">
+            <div class="col-sm-6"> 
+              <div class="pricing-box"> 
+                <h4>Regular License</h4>
+                <p>Use by you in a single product where user <span class="font-primary">are not charged.</span></p>
+                <ul class="license-list"> 
+                  <li> <img src="https://admin.pixelstrap.com/cuba/assets/images/landing/icon/right.svg" alt="Right icon">
+                    <h6 class="f-light">Support for 6 months</h6>
+                  </li>
+                  <li> <img src="https://admin.pixelstrap.com/cuba/assets/images/landing/icon/right.svg" alt="Right icon">
+                    <h6 class="f-light">Free future template updates</h6>
+                  </li>
+                  <li> <img src="/static/assets/images/landing/icon/wrong.png" alt="Wrong icon">
+                    <h6 class="f-light">Use in an end product that's sold</h6>
+                  </li>
+                </ul>
+                <div class="purchase-details">
+                  <h2>$24.00</h2><a class="btn btn-primary btn-lg rounded-pill purchase-btn" href="https://1.envato.market/3GVzd">Purchase now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6"> 
+              <div class="pricing-box"> 
+                <h4>Extended License</h4>
+                <p>Use by you in a single product where user <span class="font-primary">are charged.</span></p>
+                <ul class="license-list">
+                  <li> <img src="https://admin.pixelstrap.com/cuba/assets/images/landing/icon/right.svg" alt="Right icon">
+                    <h6 class="f-light">Support for 6 months</h6>
+                  </li>
+                  <li> <img src="https://admin.pixelstrap.com/cuba/assets/images/landing/icon/right.svg" alt="Right icon">
+                    <h6 class="f-light">Free future template updates</h6>
+                  </li>
+                  <li> <img src="https://admin.pixelstrap.com/cuba/assets/images/landing/icon/right.svg" alt="Right icon">
+                    <h6 class="f-light">Use in an end product that's sold</h6>
+                  </li>
+                </ul>
+                <div class="purchase-details">
+                  <h2>$499.00</h2><a class="btn btn-primary btn-lg rounded-pill purchase-btn" href="https://1.envato.market/3GVzd">Purchase now     </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> {% endcomment %}
+{% endblock content %}

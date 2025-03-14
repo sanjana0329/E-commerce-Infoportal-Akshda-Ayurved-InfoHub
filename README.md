@@ -84,14 +84,17 @@ Visit: [http://localhost:8000](http://localhost:8000)
 ---
 
 ## 📷 Screenshots
+![home page](https://github.com/user-attachments/assets/da58d6a5-9aec-40ff-9b1f-354b3a3d4c92)
 
 (Add screenshots of your homepage, product pages, and login page for better visualization.)
 
 ---
+![hp1](https://github.com/user-attachments/assets/f6300327-e8f7-40d2-9519-7d4b892ea136)
 
 ## 🗂️ Project Structure
 
-```
+```![hp2](https://github.com/user-attachments/assets/c20d19c9-4c1a-4dca-bf40-eda1e0199598)
+
 Akshada-Ayurveda/
 ├── manage.py
 ├── README.md

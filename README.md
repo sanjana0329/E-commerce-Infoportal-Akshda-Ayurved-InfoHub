@@ -84,10 +84,42 @@ Visit: [http://localhost:8000](http://localhost:8000)
 ---
 
 ## 📷 Screenshots
+
+
 ![Image](https://github.com/user-attachments/assets/2aaa07fd-1d69-4209-a1a8-f414d34b0548)
+
+
 ![Image](https://github.com/user-attachments/assets/dcc6e048-ee04-405e-bc5f-3c5a5277d59a)
+
+
 ![Image](https://github.com/user-attachments/assets/24329bc1-4191-4868-8b84-63156a2ef91b)
+
+
 ![Image](https://github.com/user-attachments/assets/7451e4f0-5755-4c4d-aa57-ed1f1568307c)
+
+
+![Image](https://github.com/user-attachments/assets/f085103e-34ff-4313-8165-4f41428b96e2)
+
+
+![Image](https://github.com/user-attachments/assets/5b510216-55ec-4d7e-a8db-6c358668ba81)
+
+
+![Image](https://github.com/user-attachments/assets/e541e093-567e-498c-8684-bba1ec5bf7f4)
+
+
+![Image](https://github.com/user-attachments/assets/3c338c41-a17a-41b6-a1c3-058bdc3b351b)
+
+
+![Image](https://github.com/user-attachments/assets/faf5ba0e-ed8e-4700-9b55-c9de736c3c14)
+
+
+![Image](https://github.com/user-attachments/assets/00a1e416-a26f-486a-a625-d7df4afb1f56)
+
+
+![Image](https://github.com/user-attachments/assets/aa3bc085-1cc9-4ff6-bf53-9931ecd47736)
+
+
+![Image](https://github.com/user-attachments/assets/50d0821b-4766-4e86-bc80-19661596e9e0)
 
 ## 🗂️ Project Structure
 

@@ -84,12 +84,7 @@ Visit: [http://localhost:8000](http://localhost:8000)
 ---
 
 ## 📷 Screenshots
-![home page](https://github.com/user-attachments/assets/da58d6a5-9aec-40ff-9b1f-354b3a3d4c92)
-
-(Add screenshots of your homepage, product pages, and login page for better visualization.)
-
----
-![hp1](https://github.com/user-attachments/assets/f6300327-e8f7-40d2-9519-7d4b892ea136)
+![Image](https://github.com/user-attachments/assets/7451e4f0-5755-4c4d-aa57-ed1f1568307c)
 
 ## 🗂️ Project Structure
 

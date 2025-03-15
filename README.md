@@ -143,7 +143,7 @@ Akshada-Ayurveda/
 
 If you have any questions, feel free to reach out via:
 
-- GitHub: [YourUsername](https://github.com/your-username)
+- GitHub: [sanjana0329](https://github.com/your-sanjana0329)
 - Email: [sanjananandania@gmail.com](mailto\:sanjananandania@gmail.com)
 
 ---
